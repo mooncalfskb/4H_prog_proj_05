@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Lessons</title>
+	<meta name="generator" content="BBEdit 12.5" />
+	<link href="https://fonts.googleapis.com/css?family=Fontdiner+Swanky" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+	
+<style>
+
+/*
+https://www.w3schools.com/tryit/
+*/
+
+body {
+  background: #4ea5b7;
+
+}
+
+/*
+  -webkit-animation: mymove 40s infinite; 
+  animation: mymove 40s infinite;
+*/
+
+#main{
+	width:600px; 
+	margin:0 auto;
+    padding: 50px 50px 100px 50px;
+}
+#box{
+	border-radius: 25px;
+    padding: 50px 50px 100px 50px;
+    background-image: url("https://cdn-images-1.medium.com/max/2400/1*X1YrOvpOHDHP_2ERA4HPdg.png");
+	background-size: 600px 500px;
+	background-repeat: no-repeat;
+}
+#inner_box{
+    background-color: yellow;
+    border-style: dashed;
+    padding: 50px 50px 100px 50px;
+    opacity: 0.75;
+}
+
+h1 {
+  color: maroon;
+  margin-left: 40px;
+  font-family: 'Fontdiner Swanky', cursive;
+}
+p {
+  color: purple;
+  margin-left: 40px;
+  font-family: 'Lora', serif;
+} 
+
+@keyframes mymove {
+  from {background-color: #4ea5b7;}
+  to {background-color: blue;}
+  from {background-color: blue;}
+  to {background-color: #4ea5b7;}
+}
+
+#anime {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: red;
+  animation-name: dude;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes dude {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+</style>	
+	
+	
+	
+	
+</head>
+<body>
+
+<div id="anime">
+</div>
+
+<div id="main">
+<div id="box">
+<div id="inner_box">
+
+<H1>Welcome 4H Class!</H1>
+<p>This is body text.</p>
+
+
+</div>
+</div>
+</div>
+
+
+
+</body>
+</html>
