@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Lessons</title>
+	<meta name="generator" content="BBEdit 12.5" />
+	<link href="https://fonts.googleapis.com/css?family=Fontdiner+Swanky" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+	
+<style>
+
+/*
+https://www.w3schools.com/tryit/
+*/
+
+body {
+  background: #4ea5b7;
+
+}
+
+
+/*
+    -webkit-animation: mymove 4s infinite; 
+    animation: mymove 4s infinite;
+
+*/
+
+
+#main{
+	width:600px; 
+	margin:0 auto;
+    padding: 50px 50px 100px 50px;
+
+}
+#box{
+	border-radius: 25px;
+    padding: 50px 50px 100px 50px;
+    background-image: url("https://cdn-images-1.medium.com/max/2400/1*X1YrOvpOHDHP_2ERA4HPdg.png");
+	background-size: 600px 500px;
+	background-repeat: no-repeat;
+}
+#inner_box{
+    background-color: yellow;
+    border-style: dashed;
+    padding: 50px 50px 100px 50px;
+    opacity: 0.75;
+}
+
+h1 {
+  color: maroon;
+  margin-left: 40px;
+  font-family: 'Fontdiner Swanky', cursive;
+}
+p {
+  color: purple;
+  margin-left: 40px;
+  font-family: 'Lora', serif;
+} 
+
+@keyframes mymove {
+  from {background-color: #4ea5b7;}
+  to {background-color: blue;}
+  from {background-color: blue;}
+  to {background-color: #4ea5b7;}
+}
+
+
+#anime {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: red;
+  animation-name: dude;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes dude {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+
+/*
+
+
+For "n" images You must define:
+a=presentation time for one image
+b=duration for cross fading
+Total animation-duration is of course t=(a+b)*n
+
+1
+
+animation-delay = t/n or = a+b
+
+Percentage for keyframes:
+
+0%
+a/t*100%
+(a+b)/t*100% = 1/n*100%
+100%-(b/t*100%)
+100%
+
+0
+2/3*100%
+1/600%
+
+
+
+*/
+
+
+@-webkit-keyframes cf4FadeInOut {
+ 0% {
+   opacity:1;
+ }
+ 17% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 92% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+@-moz-keyframes cf4FadeInOut {
+ 0% {
+   opacity:1;
+ }
+ 17% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 92% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+@-o-keyframes cf4FadeInOut {
+ 0% {
+   opacity:1;
+ }
+ 17% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 92% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+@keyframes cf4FadeInOut {
+ 0% {
+   opacity:1;
+ }
+ 17% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 92% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+
+
+
+
+#cf4a {
+  position:relative;
+  height:281px;
+  width:450px;
+  margin:0 auto;
+}
+#cf4a img {
+  position:absolute;
+  left:0;
+}
+
+#cf4a img {
+
+  -webkit-animation-name: cf4FadeInOut;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 7s;
+
+  -moz-animation-name: cf4FadeInOut;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-duration: 7s;
+
+  -o-animation-name: cf4FadeInOut;
+  -o-animation-timing-function: ease-in-out;
+  -o-animation-iteration-count: infinite;
+  -o-animation-duration: 7s;
+
+  animation-name: cf4FadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 7s;
+}
+#cf4a img:nth-of-type(1) {
+  -webkit-animation-delay: 6s;
+  -moz-animation-delay: 6s;
+  -o-animation-delay: 6s;
+  animation-delay: 6s;
+}
+#cf4a img:nth-of-type(2) {
+  -webkit-animation-delay: 5s;
+  -moz-animation-delay: 5s;
+  -o-animation-delay: 5s;
+  animation-delay: 5s;
+}
+#cf4a img:nth-of-type(3) {
+  -webkit-animation-delay: 4s;
+  -moz-animation-delay: 4s;
+  -o-animation-delay: 4s;
+  animation-delay: 4s;
+}
+#cf4a img:nth-of-type(4) {
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  -o-animation-delay: 3s;
+  animation-delay: 3s;
+}
+#cf4a img:nth-of-type(5) {
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  -o-animation-delay: 2s;
+  animation-delay: 2s;
+}
+#cf4a img:nth-of-type(6) {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+</style>	
+	
+	
+	
+	
+</head>
+<body>
+
+<h3>Demo with multiple images</h3>
+
+
+
+<div id="main">
+
+<div id="cf4a" class="shadow">
+  <img src="https://raw.githubusercontent.com/mooncalfskb/4H_prog_proj_05/master/images/IMG_7320.jpg" width="450" height="281" />
+  <img src="https://raw.githubusercontent.com/mooncalfskb/4H_prog_proj_05/master/images/IMG_7319.jpg" width="450" height="281" />
+  <img src="https://raw.githubusercontent.com/mooncalfskb/4H_prog_proj_05/master/images/IMG_7318.jpg" width="450" height="281" />
+  <img src="https://raw.githubusercontent.com/mooncalfskb/4H_prog_proj_05/master/images/IMG_7317.jpg" width="450" height="281" />
+  <img src="https://raw.githubusercontent.com/mooncalfskb/4H_prog_proj_05/master/images/IMG_7316.jpg" width="450" height="281" />
+  <img src="https://raw.githubusercontent.com/mooncalfskb/4H_prog_proj_05/master/images/IMG_7315.jpg" width="450" height="281" />
+</div>
+
+</div>
+
+
+</body>
+</html>
