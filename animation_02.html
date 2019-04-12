@@ -2,10 +2,7 @@
 <html>
 <head>
 	<title>CSS Lessons</title>
-	<meta name="generator" content="BBEdit 12.5" />
-	<link href="https://fonts.googleapis.com/css?family=Fontdiner+Swanky" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
-	
+	<meta name="generator" content="BBEdit 12.5" />	
 <style>
 
 /*
@@ -14,51 +11,20 @@ https://www.w3schools.com/tryit/
 
 body {
   background: #4ea5b7;
-
 }
 
 
-#main{
-	width:600px;
-	height:400px; 
-	margin:0 auto;
-    padding: 50px 50px 100px 50px;
-    -webkit-animation: mymove 4s infinite; 
-    animation: mymove 4s infinite;
-    animation-direction: alternate;
-
-}
-
-h1 {
-  color: maroon;
-  margin-left: 40px;
-  font-family: 'Fontdiner Swanky', cursive;
-}
-p {
-  color: purple;
-  margin-left: 40px;
-  font-family: 'Lora', serif;
-} 
-
-@keyframes mymove {
-  from {background-color: #4ea5b7;}
-  to {background-color: blue;}
-  from {background-color: blue;}
-  to {background-color: #4ea5b7;}
-}
-
-
-#anime {
+#box {
   width: 100px;
   height: 100px;
   position: relative;
   background-color: red;
-  animation-name: dude;
+  animation-name: movements;
   animation-duration: 4s;
   animation-iteration-count: infinite;
 }
 
-@keyframes dude {
+@keyframes movements {
   0%   {background-color:red; left:0px; top:0px;}
   25%  {background-color:yellow; left:200px; top:0px;}
   50%  {background-color:blue; left:200px; top:200px;}
@@ -67,18 +33,12 @@ p {
 }
 
 
-</style>	
-	
-	
-	
-	
+</style>		
 </head>
 <body>
 
 
-<div id="main">
-<div id="anime">
-</div>
+<div id="box">
 </div>
 
 
