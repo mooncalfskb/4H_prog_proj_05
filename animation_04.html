@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Lessons</title>
+	<meta name="generator" content="BBEdit 12.5" />	
+<style>
+
+/*
+https://www.w3schools.com/tryit/
+*/
+
+body {
+  background: #4ea5b7;
+}
+
+
+#box {
+  width: 200px;
+  height: 100px;
+  position: relative;
+  background-color: red;
+  animation-name: box_movements;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  background-image: url("https://cdn-images-1.medium.com/max/2400/1*X1YrOvpOHDHP_2ERA4HPdg.png");
+  background-size: cover;
+}
+
+#circle {
+  width: 300px;
+  height: 200px;
+  border-radius: 25px;
+  position: relative;
+  background-color: blue;
+  animation-name: circle_movements;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  background-image: url("https://www.indiewire.com/wp-content/uploads/2017/11/wonder-woman2.jpg?w=780");
+  background-size: cover;
+
+}
+
+
+@keyframes box_movements {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px; width:50px; height:50px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+@keyframes circle_movements {
+  0%   {background-color:red; left:200px; top:200px;}
+  25%  {background-color:yellow; left:0px; top:200px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:200px; top:0px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+
+</style>		
+</head>
+<body>
+
+
+<div id="box">
+</div>
+
+<div id="circle">
+</div>
+
+</body>
+</html>
